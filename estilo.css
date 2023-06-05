@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #000000 16.62%, #5a5858 85.61%);
+}
+
+header {
+    background-color: #000000;
+    width: 100%;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 70%;
+}
+
+.logo-imagem {
+    height: 72px;
+}
+
+.menu {
+    width: 30%;
+    font-family: 'Sarala', sans-serif;
+}
+
+.menu nav a {
+    color: white;
+    padding-right: 50px;
+    font-size: 15px;
+    position: relative;
+}
+
+.menu nav a::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu-inicio:hover::after {
+    width: 50px;
+}
+
+.menu-contato:hover::after {
+    width: 70px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.6px solid white;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-puro {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-puro-titulo {
+    font-family: 'Patua One', cursive;
+    color: white;
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.conteudo-principal-puro-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 24px;
+}
+
+.conteudo-principal-puro-botão {
+    background-color: white;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 5px 6px 5px rgb(0, 0, 0.24);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.conteudo-principal-puro-botão:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-puro-imagem {
+    height: 500px;
+    padding-top: 40px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.6px solid white;
+    padding-top: 48px;
+    font-family: 'Patua One', cursive;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.6px solid white;
+}
+
+.rodape-paragrafo {
+    height: 48px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
